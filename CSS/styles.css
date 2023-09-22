@@ -90,14 +90,14 @@ footer p
   width: 35em;
   height: 22em;
   margin: 5em auto;
-  background-color: white;
+  background-color: #02735E;
   border: 0.2em solid black;
   border-radius: 1.5em;
 }
 
 .card2 header
 {
-  background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
+  background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.1), rgba(0,0,0,0));
   border-radius: 1.5em 1.5em 0 0;
   padding: 1em;
   height: 3em;
