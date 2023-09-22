@@ -67,7 +67,7 @@ h2
   line-height: 1.5em;
 }
 
-article p
+.card article p
 {
   color: white;
   padding: 1em;
@@ -123,4 +123,12 @@ footer p
 {
   height: 12em;
   float: right;
+}
+
+.card2 article p
+{
+  color: gold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1em;
+  line-height: 1.4em;
 }
