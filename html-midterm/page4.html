@@ -1,4 +1,4 @@
-
+<!DOCTYPE html> <!--Start tag seen without seeing a doctype first. Expected <!DOCTYPE html>.-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,24 +28,28 @@
     </div>
     
     <table>
-        <tr>
+        <!-- <tr>
             <th>Dogs</th>
             <th>Cats</th>
-            <th>Other?</th>
-        </tr>
+            <th>Other?</th> 
+            The images in the table rows don’t match the headers.
+        </tr> -->
         <tr>
+            <th>Dogs</th>
             <td><img src="img/dogsFrolic.png"></td>
-            <td><img src="img/dogSinging.png">
+            <td><img src="img/dogSinging.png"></td> <!--Unclosed <td> Tags-->
             <td><img src="img/labLab.png"></td>
         </tr>
         <tr>
+            <th>Cats</th>
             <td><img src="img/boxingCats.png"></td>
-            <img src="img/orangeCat.png">
+            <td><img src="img/orangeCat.png"></td> <!--added missing td tags-->
             <td><img src="img/sunCat.png"></td>
         </tr>
         <tr>
+            <th>Other?</th>
             <td><img src="img/diamondAlien.png"></td>
-            <img src="img/creature.png"></td>
+            <td><img src="img/creature.png"></td><!-- Add opening td tag -->
             <td><img src="img/aliensPeace.png"></td>
         </tr>
 
