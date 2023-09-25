@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--Start tag seen without seeing a doctype first. Expected <!DOCTYPE html>.-->
+<!DOCTYPE html> <!--Missing <!DOCTYPE html>-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,25 +32,25 @@
             <th>Dogs</th>
             <th>Cats</th>
             <th>Other?</th> 
-            The images in the table rows don’t match the headers.
+            The images in the table rows don’t match the headers so rearranged it.
         </tr> -->
-        <tr>
+        <tr> <!--added the alt attribute with suitable descriptions for each image-->
             <th>Dogs</th>
-            <td><img src="img/dogsFrolic.png"></td>
-            <td><img src="img/dogSinging.png"></td> <!--Unclosed <td> Tags-->
-            <td><img src="img/labLab.png"></td>
+            <td><img src="img/dogsFrolic.png" alt="Dogs Frolicking"></td>
+            <td><img src="img/dogSinging.png" alt="Dog Singing"></td> <!--Unclosed <td> Tags-->
+            <td><img src="img/labLab.png" alt="Lab in Lab"></td>
         </tr>
         <tr>
             <th>Cats</th>
-            <td><img src="img/boxingCats.png"></td>
-            <td><img src="img/orangeCat.png"></td> <!--added missing td tags-->
-            <td><img src="img/sunCat.png"></td>
+            <td><img src="img/boxingCats.png" alt="Boxing Cats"></td>
+            <td><img src="img/orangeCat.png" alt="Orange Cat"></td> <!--added missing td tags-->
+            <td><img src="img/sunCat.png" alt="Sun Cat"></td>
         </tr>
         <tr>
             <th>Other?</th>
-            <td><img src="img/diamondAlien.png"></td>
-            <td><img src="img/creature.png"></td><!-- Add opening td tag -->
-            <td><img src="img/aliensPeace.png"></td>
+            <td><img src="img/diamondAlien.png" alt="Diamond Alien"></td>
+            <td><img src="img/creature.png" alt="Creature"></td><!-- Add opening td tag -->
+            <td><img src="img/aliensPeace.png" alt="Aliens Peace"></td>
         </tr>
 
     </table>
