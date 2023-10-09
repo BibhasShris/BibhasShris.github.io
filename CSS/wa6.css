@@ -1,0 +1,35 @@
+.overlay
+{   top: 20px;
+    left: 20px;
+    position: absolute;
+    text-align: center;
+    
+}
+
+.box1, .box2, .box3
+{
+    width: 310px;
+    height: 100px;
+    position: absolute;
+}
+
+.box1
+{
+    background-color: rgba(63, 63, 63, 0.8);
+    bottom: 20px;    
+}
+
+.box2
+{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 0, 0, 0.8);
+    bottom: 20px;
+    left: 50px; 
+}
+
+.overlay img
+{
+    max-width: 100%;
+    z-index: 3;
+}
