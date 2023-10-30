@@ -114,7 +114,7 @@ h1{
     color: rgb(174, 174, 174);
 }
 
-@media screen and (max-width:600px){ 
+@media screen and (max-width:400px){ 
     .guitar img{
         margin-top: 70px;
         width: 90%;
