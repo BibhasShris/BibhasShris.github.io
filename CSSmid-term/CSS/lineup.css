@@ -1,0 +1,133 @@
+body
+{
+    background-image: url("../img/Background.jpg");
+    background-size: cover;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+nav{
+    background-color: #412312;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; /* center on the x-axis */
+    align-items: center; /* center on the y-axis */
+}
+
+nav ul li a{
+    color:#ece0d1;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(174, 174, 174);
+}
+
+main{
+    margin-top: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+}
+main .year1{
+    background-color: #ece0d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .year2{
+    background-color: #ece0d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main h2, b{
+    color: #412312;
+}
+
+main h3{
+    color: #ece0d1;
+    background-color: #412312;
+    padding-left: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+main .one{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .two{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .three{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .four{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .five{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .six{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .seven{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .eight{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+main .nine{
+    background-color: #ece0d1;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (max-width:400px){ 
+    main{
+     grid-template-columns: 1fr;
+    }
+    main .year1, main .year2 {
+        display: block;
+    }
+    main .year1 img, main .year2 img {
+        width: 50%;
+        height: auto;
+    }
+
+}
+@media screen and (min-width:1500px){ 
+    main{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

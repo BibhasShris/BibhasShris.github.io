@@ -1,0 +1,155 @@
+body
+{
+    background-image: url("../img/Background.jpg");
+    background-size: cover;
+    margin: 0;
+}
+
+nav{
+    background-color: #412312;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center; /* center on the x-axis */
+    align-items: center; /* center on the y-axis */
+}
+
+nav ul li a{
+    color:#ece0d1;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(174, 174, 174);
+}
+
+.guitar {
+    position: relative;
+    z-index: 1;
+
+}
+
+.titleOverlay {
+    position: absolute;
+    font-family: 'GFS Didot', serif;
+    font-size: 100px;
+    top: 34.3%;
+    left: 55.4%;
+    color: #ece0d1; 
+}
+
+.titleOverlay .word2{
+    position: absolute;
+    right:67%;
+    top:60%;
+}
+.titleOverlay .word3{
+    position: absolute;
+    left:2%;
+    top:148%;
+}
+
+.guitarBody{
+    position: absolute;
+    top:77%;
+    z-index: 0;
+    text-align: center;
+    font-size: large;
+}
+
+h1{
+    color: #412312;
+    position: absolute;
+    top: 30%;
+    left: 348px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+}
+
+.para{
+    color: black;
+    top: 40%;
+    right: 180px; 
+    position: absolute;
+    padding-left: 35px; 
+}
+
+.para, .pa p b{
+    color:#412312;
+    font-size: 23px;
+}
+
+.button {
+    position: absolute;
+    top: 78%;
+    left: 40%;
+    height: 50px;
+    width: 120px;
+    background-color: #412312;
+    border: thick ridge #412312;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button h2 a{
+    color:#ece0d1;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.button h2 a:hover{
+    color: rgb(174, 174, 174);
+}
+
+@media screen and (max-width:400px){ 
+    .guitar img{
+        margin-top: 70px;
+        width: 90%;
+        height: auto;
+    }
+    .titleOverlay{
+        top:120px;
+        right: 145px;
+        font-size: 20px;
+    }
+    .guitarBody{
+        top:30%;
+    }
+    .guitarBody img{
+        width: 100%;
+        height:auto;
+    }
+    h1, .para{
+        font-size: 8px;
+    }
+    h1{
+        left: 110px;
+    }
+    .button{
+        top: 180px;
+        width:30px;
+        height: 10px;
+    }
+    .button h2 a{
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+/* @media screen and (min-width:1500px){ 
+    
+} */
