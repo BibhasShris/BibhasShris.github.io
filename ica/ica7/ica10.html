@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        font-family: "helvetica neue", helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 255, 89, 1);
+        color: rgb(100 0 0 / 1);
+        box-shadow: 1px 1px 2px rgb(0 0 200 / 0.4);
+        border-radius: 10px;
+        padding: 3px 10px;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color:beige;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="press" type="button">Change Background</button>
+    <form id="NameForm">
+        <p>
+            Enter your Name & press Enter:<br>
+            <input type="text" name="Name" maxlength="30"/><br/>
+            <br>
+        </p>
+    </form>
+    <script>
+      //variable defined using 'const'or let
+      const form = document.getElementById("NameForm");
+      const press = document.getElementById("press");
+
+    form.addEventListener("submit", message);  
+    press.addEventListener("click", colorChange);
+
+    function message(event) {
+        event.preventDefault();
+        const nameInput = form.querySelector('input[name="Name"]');
+        let name = nameInput.value;
+        alert(`Thank you, ${name}!`);
+      }
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function colorChange() {
+        document.body.style.backgroundColor = getRandomColor();
+      }
+    </script>
+  </body>
+</html>
