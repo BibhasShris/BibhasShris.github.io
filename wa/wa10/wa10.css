@@ -1,0 +1,42 @@
+body {
+    font-family: helvetica, sans-serif;
+    width: 350px;
+    background-color: rgb(40, 39, 39);
+  }
+
+#Name{
+    color:aliceblue;
+    background-color: #0073ffcc;
+    border: 10px ridge rgb(0, 35, 101);
+    padding: 2px;
+}
+
+#US, #UK{
+    color: beige;
+}
+  label {
+    font-weight: bold;
+  }
+
+  div {
+    padding-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 5px;
+    width: 150px;
+  }
+
+  p {
+    background: #ffc125;
+    color: #5e2612;
+    padding: 10px;
+    visibility: hidden;
+  }
+  .randomize{
+    background-color:#ffc125;
+  }
+  .randomize:hover{
+    background-color:#464646;
+    color:aliceblue;
+  }
