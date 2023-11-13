@@ -1,38 +1,62 @@
 h1 {
   font-family: helvetica, arial, sans-serif;
   text-align: center;
+  background-color: black;
+  color:aliceblue;
+  margin-top: 0;
+  padding:8px;
 }
 
 body {
-  width: 640px;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
+  background-image: url("/wa/wa11/images/pexels-daniel-torobekov-5277705.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .full-img {
   position: relative;
-  display: block;
-  width: 640px;
-  height: 480px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  left: 102px;
+  width: 80%;
+  height: 80%;
+}
+
+.displayed-img{
+  width: 80%;
+  height: 80%;
 }
 
 .overlay {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 640px;
-  height: 480px;
+  left: 79px;
+  width: 80%;
+  height: 100%;
   background-color: rgba(0,0,0,0);
 }
 
 button {
   border: 0;
-  background: rgba(150,150,150,0.6);
-  text-shadow: 1px 1px 1px white;
-  border: 1px solid #999;
+  background: rgba(255, 255, 255, 0.6);
+  /* text-shadow: 1px 1px 1px rgb(0, 0, 0); */
+  border: 1px solid #000000;
   position: absolute;
   cursor: pointer;
   top: 2px;
-  left: 2px;
+  left: -10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color:  rgba(1, 49, 36, 0.5);
+  color: aliceblue;
 }
 
 .thumb-bar img {
@@ -40,4 +64,10 @@ button {
   width: 20%;
   float: left;
   cursor: pointer;
+}
+
+.thumb-bar img:hover
+{
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }

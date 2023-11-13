@@ -4,15 +4,15 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 /* Declaring the array of image filenames */
-const image=["images/pic1.jpg", "images/pic2.jpg", "images/pic3.jpg", "images/pic4.jpg", "images/pic5.jpg"];
+const image=["images/scene1.jpg", "images/scene2.jpg", "images/scene3.jpg", "images/scene4.png", "images/scene5.jpg"];
 
 /* Declaring the alternative text for each image file */
 const alternateName={
-    "images/pic1.jpg":"eye",
-    "images/pic2.jpg":"wave",
-    "images/pic3.jpg":"flowers",
-    "images/pic4.jpg":"Egypt",
-    "images/pic5.jpg":"butterfly"
+    "images/scene1.jpg":"park",
+    "images/scene2.jpg":"NC",
+    "images/scene3.jpg":"road work",
+    "images/scene4.jpg":"pink",
+    "images/scene5.jpg":"Intro MV"
 };
 
 /* Looping through images */
