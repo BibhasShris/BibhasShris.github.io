@@ -12,7 +12,6 @@ const endpoint = `https://api.pokemontcg.io/v2/cards`;
 
 async function getQuote()
 {
-    console.log(`test`);
  // try -> tries something; if it returns an error, it puts us into the catch block
     try{
         // Show loading state
