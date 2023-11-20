@@ -80,6 +80,11 @@ html {
     gap: 0px;
 }
 
+.quotes p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #ebebeb;
+}
+
 #js-random-image, #js-random-image2, #js-random-image3, #js-random-image4 {
     width: 60%;
     height: 60%;
