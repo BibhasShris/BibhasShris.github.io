@@ -57,13 +57,20 @@ class Ball {
     }
     collisionDetect() {
       for (const ball of balls) {
-        if (this !== ball) {
+        if (this !== ball && !this.collided && !ball.collided) {
           const dx = this.x - ball.x;
           const dy = this.y - ball.y;
           const distance = Math.sqrt(dx * dx + dy * dy);
     
           if (distance < this.size + ball.size) {
             ball.color = this.color = randomRGB();
+
+             // Increase the size of both colliding balls
+            this.size += 15; 
+            ball.size += 15;
+
+            // Set the collided flag to true for both balls
+          this.collided = true;
           }
         }
       }
@@ -72,15 +79,15 @@ class Ball {
 
   const balls = [];
 
-while (balls.length < 25) {
+while (balls.length < 15) {
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
     // away from the edge of the canvas, to avoid drawing errors
     random(0 + size, width - size),
     random(0 + size, height - size),
-    random(-7, 7),
-    random(-7, 7),
+    random(-5, 5),
+    random(-1, 1),
     randomRGB(),
     size,
   );
