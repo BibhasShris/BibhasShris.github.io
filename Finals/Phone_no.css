@@ -1,0 +1,44 @@
+#enterButton {
+    position: absolute;
+}
+
+body {
+    font-family: helvetica, sans-serif;
+    background: linear-gradient(to left top, #4A302A, #7D6254);
+  }
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  font-size: 40px;
+  color: #221613;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color:#CCB79C;
+  width: 700px;
+  bottom: 15px;
+  border: 10px ridge rgba(74, 48, 42, 1);
+}
+
+p{
+    color: #fff3dc;
+}
+
+#submit{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #D8985B;
+    color: #000000;
+    font-size: large;
+    border: 10px ridge rgba(74, 48, 42, 1);
+}
+#submit:hover{
+    background-color: rgb(87, 87, 87);
+    color:aliceblue;
+}
+
+#enterButton{
+    background-color: rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+}

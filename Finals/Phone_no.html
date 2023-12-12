@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone</title>
+    <link href="/Finals/Phone_no.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Please Enter your Phone Number below</h1>
+    <p>To enter your phone number, generate a random number using the 'Generate Random Number' Button and once you get the specific number you are looking for click the 'Enter' button.</p>
+    <form action="">
+        <p>
+            Phone Number:<br>
+            <input type="text" id="phoneNumber" name="Phone Number" maxlength="11" value="+1" disabled><br>
+            <br>
+
+            <button id="submit" onclick="submitForm()">Submit</button>  <br>
+        </p>
+    </form>
+
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <p id="randomNumberDisplay"></p>
+
+    <button id="enterButton" onclick="enterNumber()">Enter</button>
+
+    <script src="/Finals/Phone_no.js"></script>
+</body>
+</html>
