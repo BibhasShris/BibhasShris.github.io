@@ -57,7 +57,7 @@ function moveButton() {
         setTimeout(() => {
             // Request the next animation frame after the delay
             requestAnimationFrame(animate);
-        }, 1000);
+        }, 900);
     }
 
     // Start the animation loop

@@ -5,6 +5,13 @@
 body {
     font-family: helvetica, sans-serif;
     background: linear-gradient(to left top, #4A302A, #7D6254);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin: 0;
   }
 
 h1 {
@@ -19,10 +26,13 @@ h1 {
   width: 700px;
   bottom: 15px;
   border: 10px ridge rgba(74, 48, 42, 1);
+  margin-bottom: 0;
 }
 
 p{
     color: #fff3dc;
+    margin-left: 255px;
+    margin-right: 246px;
 }
 
 #submit{
@@ -32,6 +42,8 @@ p{
     color: #000000;
     font-size: large;
     border: 10px ridge rgba(74, 48, 42, 1);
+    cursor: pointer;
+    margin-left: 38px;
 }
 #submit:hover{
     background-color: rgb(87, 87, 87);
@@ -41,4 +53,29 @@ p{
 #enterButton{
     background-color: rgb(255, 255, 255);
     color:rgb(0, 0, 0);
+}
+
+#random
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #D8985B;
+    color: #000000;
+    border: 10px ridge rgba(74, 48, 42, 1);
+    font-size: large;
+    cursor: pointer;
+}
+#random:hover{
+    background-color: rgb(87, 87, 87);
+    color:aliceblue;
+}
+
+#enterButton
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #D8985B;
+    color: #000000;
+    border: 5px ridge rgba(74, 48, 42, 1);
+    cursor: pointer;
 }
