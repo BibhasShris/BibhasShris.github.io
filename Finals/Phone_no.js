@@ -12,6 +12,14 @@ function submitForm() {
     }
 }
 
+function clearForm() {
+    // Get the phone number input element
+    let phoneNumberInput = document.getElementById('phoneNumber');
+
+    // Clear the content of the phone number input
+    phoneNumberInput.value = '';
+}
+
 function generateRandomNumber() {
     // Check if all possible numbers have been used
     if (usedNumbers.length === 10) 
