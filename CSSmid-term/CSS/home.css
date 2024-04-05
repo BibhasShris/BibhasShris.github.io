@@ -42,9 +42,9 @@ nav a:hover{
 .titleOverlay {
     position: absolute;
     font-family: 'GFS Didot', serif;
-    font-size: 100px;
-    top: 34.3%;
-    left: 55.4%;
+    font-size: 63px;
+    top: 34.5%;
+    left: 62.1%;
     color: #ece0d1; 
 }
 
@@ -61,28 +61,45 @@ nav a:hover{
 
 .guitarBody{
     position: absolute;
-    top:77%;
+    top:64%;
     z-index: 0;
     text-align: center;
     font-size: large;
 }
 
+.guitar img {
+    width: 100%; 
+    height: auto;
+    margin-top: 70px; /* Adjust margin as needed */
+}
+
+.guitarBody img{
+    width: 100%;
+    height:auto;
+    
+}
+
 h1{
     color: #412312;
     position: absolute;
-    top: 30%;
-    left: 348px;
+    top: 25%;
+    left: 200px;
     padding-left: 20px;
     padding-right: 20px;
-  
 }
 
 .para{
     color: black;
-    top: 40%;
+    top: 38%;
     right: 180px; 
     position: absolute;
     padding-left: 35px; 
+    margin-top: 15px;
+}
+
+.para p {
+    margin: 0; /* Set margin to zero */
+    line-height: 1.2; /* Adjust line height to decrease or increase the gap */
 }
 
 .para, .pa p b{
