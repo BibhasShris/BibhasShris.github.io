@@ -56,6 +56,11 @@ main .year2{
     align-items: center;
 }
 
+.year1 img,
+.year2 img {
+    max-width: 100%;
+}
+
 main h2, b{
     color: #412312;
 }

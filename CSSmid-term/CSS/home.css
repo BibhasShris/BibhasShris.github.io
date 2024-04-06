@@ -39,26 +39,6 @@ nav a:hover{
 
 }
 
-.titleOverlay {
-    position: absolute;
-    font-family: 'GFS Didot', serif;
-    font-size: 63px;
-    top: 34.5%;
-    left: 62.1%;
-    color: #ece0d1; 
-}
-
-.titleOverlay .word2{
-    position: absolute;
-    right:67%;
-    top:60%;
-}
-.titleOverlay .word3{
-    position: absolute;
-    left:2%;
-    top:148%;
-}
-
 .guitarBody{
     position: absolute;
     top:64%;
@@ -132,18 +112,13 @@ h1{
 }
 
 @media screen and (max-width:400px){ 
-    .guitar img{
-        margin-top: 70px;
-        width: 90%;
-        height: auto;
-    }
-    .titleOverlay{
-        top:95px;
-        right: 50px;
-        font-size: 20px;
+
+    .guitar {
+        position: relative;
+        margin-top:245px;
     }
     .guitarBody{
-        top:30%;
+        top:45%;
     }
     .guitarBody img{
         width: 100%;
@@ -155,8 +130,10 @@ h1{
     }
     h1{
         left: 90px;
+        top: 30%;
     }
     .para{
+        top: 34%;
         right:52px;
     }
     .button{
@@ -171,6 +148,18 @@ h1{
     align-items: center;
     }
 }
-/* @media screen and (min-width:1500px){ 
+
+@media screen and (min-width: 1500px) {
     
-} */
+    .guitarBody{
+        top: 62%;
+    }
+    h1{
+        top: 38%;
+        right: 25%;
+    }
+    .para{
+        right: 17%;
+        top: 50%;
+    }
+}
